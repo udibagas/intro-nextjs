@@ -1,6 +1,6 @@
 import { ProductType } from "@/entities/ProductType";
 import { BsCart4 } from "react-icons/bs";
-import { MdStarRate, MdTag } from "react-icons/md";
+import { MdStarRate } from "react-icons/md";
 
 export default function ProductDetail({ product }: { product: ProductType }) {
   return (

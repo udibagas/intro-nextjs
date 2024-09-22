@@ -16,7 +16,7 @@ export default async function Products() {
   return (
     <div className="flex flex-wrap gap-4 justify-center">
       {products.map(el => {
-        return <ProductCard product={el} key={el.id} />
+        return <ProductCard product={el} key={el._id.toString()} />
       })}
     </div>
   )

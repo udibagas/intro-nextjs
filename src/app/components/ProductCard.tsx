@@ -13,7 +13,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
         <div className="line-clamp-2">{product.title}</div>
         <div className="font-bold">${product.price}</div>
         <div className="mt-2">
-          <Link href={`/products/${product.id}`} className="btn btn-primary w-full font-bold">
+          <Link href={`/products/${product._id}`} className="btn btn-primary w-full font-bold">
             <BsCartPlus />
             Buy Now
           </Link>
