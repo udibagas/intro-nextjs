@@ -12,8 +12,8 @@ export default function ProductDetail({ product }: { product: ProductType }) {
         <h2 className="text-3xl font-bold">{product.title}</h2>
         <div className="flex">
           {
-            [...Array(Math.floor(product.rating.rate))].map((el) => {
-              return <MdStarRate />
+            [...Array(Math.floor(product.rating.rate))].map((el, i) => {
+              return <MdStarRate key={i} />
             })
           }
 
