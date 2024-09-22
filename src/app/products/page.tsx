@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 export default async function Products() {
 
   const res = await fetch(`${process.env.BASE_URL}/api/products`, {
-    cache: 'no-cache'
+    cache: 'no-store'
   })
 
   if (!res.ok) return (
